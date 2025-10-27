@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7fb;
+  padding: 0;
+  max-width: 1440px;
+  margin: 2.5rem 0.5rem 0;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+.hero {
+  position: relative;
+  padding: 48px 16px;
+  background: linear-gradient(180deg, #fbf8ff, #fff);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.1);
+  border-radius: 12px;
+}
+.hero .circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+.hero .box {
+  position: absolute;
+  opacity: 0.15;
+}
+.card {
+  color: #fff;
+  background: #2275ad;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+.card:hover {
+  background: #005f99;
+}
+input,
+select,
+button {
+  font: inherit;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 1px solid inherit;
+}
+.Toastify__toast-container--top-right {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: end !important;
+  flex-direction: column;
+}
+.Toastify__toast {
+  width: 200px !important;
+}
+@theme {
+  --font-clash-display: 'Clash Display', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+}
+@utility flex-centralize {
+  @apply flex justify-center items-center;
+}
